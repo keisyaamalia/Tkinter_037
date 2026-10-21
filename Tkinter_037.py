@@ -27,3 +27,14 @@ mapel = [
     "Matematika", "Bahasa Indonesia", "Bahasa Inggris", "Fisika", "Kimia",
     "Biologi", "Ekonomi", "Sejarah", "Geografi", "Informatika",
 ]
+
+entries = []
+for i, nama in enumerate(mapel):
+    baris = i % 5          # 5 baris
+    kolom = (i // 5) * 2   # 2 kolom (masing-masing label + entry)
+    tk.Label(frame_input, text=nama + ":", anchor="w", width=16).grid(
+        row=baris, column=kolom, sticky="w", padx=(0, 5), pady=6
+    )
+    e = tk.Entry(frame_input, width=8, bd=3, justify="center")
+    e.grid(row=baris, column=kolom + 1, padx=(0, 25), pady=6)
+    entries.append(e)
