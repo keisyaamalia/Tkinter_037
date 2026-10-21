@@ -49,3 +49,4 @@ for i, nama in enumerate(mapel):
     pady=5,
     command=hasil_prediksi,
 )
+tombol.pack(pady=15)
