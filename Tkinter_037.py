@@ -17,3 +17,8 @@ label_judul = tk.Label(
     fg="#1a4f8b",
 )
 label_judul.pack(pady=(20, 10))
+
+frame_input = tk.LabelFrame(
+    root, text=" Masukkan Nilai Mata Pelajaran ", font=("Arial", 11, "bold"),
+    padx=20, pady=15,
+)
