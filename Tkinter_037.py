@@ -22,3 +22,4 @@ frame_input = tk.LabelFrame(
     root, text=" Masukkan Nilai Mata Pelajaran ", font=("Arial", 11, "bold"),
     padx=20, pady=15,
 )
+frame_input.pack(padx=25, pady=10, fill="x")
