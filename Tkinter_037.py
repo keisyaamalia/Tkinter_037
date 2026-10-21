@@ -53,3 +53,15 @@ tombol.pack(pady=15)
 
 var_hasil = tk.StringVar()
 var_hasil.set("-")
+
+tk.Label(root, text="Prodi yang direkomendasikan:", font=("Arial", 11)).pack()
+label_hasil = tk.Label(
+    root,
+    textvariable=var_hasil,
+    font=("Arial", 16, "bold"),
+    fg="#0b7a3b",
+    relief=tk.RAISED,
+    width=28,
+    pady=8,
+)
+label_hasil.pack(pady=(5, 20))
